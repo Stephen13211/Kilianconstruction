@@ -116,12 +116,14 @@ We handle residential and commercial projects with precision and trust.
 <div class="overlay">
 <h3>Contact Us</h3>
 
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea rows="4" placeholder="Your Message"></textarea>
-<button type="submit">Send Message</button>
+
+<form action="mailto:stephenlottering0@gmail.com" method="POST" enctype="text/plain">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
 </form>
+
 
 <br>
 
