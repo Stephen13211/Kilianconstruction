@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kilian Construction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth;}
+body{background:#111;color:#fff}
+
+header{position:fixed;top:0;width:100%;background:rgba(0,0,0,.8);display:flex;justify-content:space-between;align-items:center;padding:15px 40px;z-index:999}
+header h1{color:#ffb703}
+nav a{color:#fff;margin-left:20px;text-decoration:none}
+nav a:hover{color:#ffb703}
+
+section{padding:120px 10%;background-size:cover;background-position:center}
+
+.hero{height:100vh;background:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1950&q=80") no-repeat center/cover;display:flex;align-items:center;justify-content:center;text-align:center}
+.overlay{background:rgba(0,0,0,.7);padding:50px;border-radius:20px;animation:fade 2s}
+.hero h2{font-size:3rem;color:#ffb703}
+button{padding:15px 30px;border:none;border-radius:30px;background:#ffb703;color:black;font-weight:bold;cursor:pointer}
+button:hover{background:white}
+
+.about{background:url("https://images.unsplash.com/photo-1581093458791-9c6e6f6f6f6f?auto=format&fit=crop&w=1950&q=80") no-repeat center/cover}
+.services{background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1950&q=80") no-repeat center/cover}
+.gallery{background:#111}
+.contact{background:url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1950&q=80") no-repeat center/cover}
+
+h3{text-align:center;font-size:2.5rem;color:#ffb703;margin-bottom:40px}
+
+.services-grid,.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.box{background:rgba(0,0,0,.7);padding:25px;border-radius:15px;text-align:center;transition:.3s}
+.box:hover{transform:scale(1.05)}
+
+.gallery img{width:100%;border-radius:15px}
+
+form input,form textarea{width:100%;padding:12px;margin-bottom:15px;border-radius:10px;border:none}
+iframe{width:100%;height:300px;border-radius:15px;border:none}
+
+footer{text-align:center;background:black;padding:20px;color:#aaa}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:15px;border-radius:50%;
+font-size:24px;text-decoration:none;
+box-shadow:0 0 10px black
+}
+
+@keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1}}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🏗 Kilian Construction</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<a href="https://wa.me/27710000000" class="whatsapp">💬</a>
+
+<section class="hero" id="home">
+<div class="overlay">
+<h2>Building Your Vision</h2>
+<p>Strong. Reliable. Professional.</p>
+<br>
+<a href="#contact"><button>Get Free Quote</button></a>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="overlay">
+<h3>About Us</h3>
+<p>
+Kilian Construction delivers premium construction services with professionalism and pride. 
+We handle residential and commercial projects with precision and trust.
+</p>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="overlay">
+<h3>Our Services</h3>
+<div class="services-grid">
+<div class="box">Residential Building</div>
+<div class="box">Commercial Construction</div>
+<div class="box">Renovations & Extensions</div>
+<div class="box">Roofing</div>
+<div class="box">Painting</div>
+<div class="box">Bricklaying</div>
+</div>
+</div>
+</section>
+
+<section class="gallery" id="gallery">
+<h3>Our Projects</h3>
+<div class="gallery-grid">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1590644365607-06d2f99c0d70?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1588854337114-dc47d07ef3f3?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80">
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="overlay">
+<h3>Contact Us</h3>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+<br>
+
+<p><strong>Phone:</strong> 071 000 0000</p>
+<p><strong>Email:</strong> info@kilianconstruction.co.za</p>
+<p><strong>Location:</strong> South Africa</p>
+
+<br>
+
+<iframe src="https://www.google.com/maps?q=south%20africa&output=embed"></iframe>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Kilian Construction — Built Strong</p>
+</footer>
+
+</body>
+</html>
